@@ -11,7 +11,6 @@
 <body>
 
 	<div>
-
 		<form id="order-form" class="order-form">
 			
 			<!-- Personalised Answer Books -->
@@ -217,46 +216,40 @@
 			<!-- /Extras -->
 
 			<!-- Payment Options -->
-			<fieldset class="payment-options">
+			<fieldset class="payment-totals">
 				<legend>Payment Options</legend>
 
 				<div class="order-form__row">
-					<div class="payment-options__col-1">
+					<div class="payment-totals__col-1">
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec placerat efficitur dictum. Maecenas ut est ligula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec placerat efficitur dictum. Maecenas ut est ligula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec placerat efficitur dictum. Maecenas ut est ligula.</p>
 					</div>
-					<div class="payment-options__col-2">
-						<div class="payment-options__row ">
+					<div class="payment-totals__col-2">
+						<div class="payment-totals__row ">
 							<label for="sub-total">Sub Total</label>
 							<input type="number" min="1" max="1000" step="1" id="sub-total" name="sub-total" disabled/>
 						</div>
-						<div class="payment-options__row">
+						<div class="payment-totals__row">
 							<label for="postage">Delivery</label>
 							<input type="number" min="1" max="1000" step="1" id="postage" name="postage" disabled/>
 						</div>
-						<div class="payment-options__row">
+						<div class="payment-totals__row">
 							<label for="total">Total</label>
 							<input type="number" min="1" max="1000" step="1" id="total" name="total" disabled/>
 						</div>
 					</div>
 				</div>
-
-
-
-
-
-
-
-
-
-
-
 			</fieldset>
 			<!-- /Payment Options -->
-
-
-
 		</form>
+	</div>
 
+
+	<div class="payment-options">
+		<div class="order-form__row">
+			<p>Pay By:</p>
+			<button>Bank Transfer</button>
+			<button>Credit / Debit Card</button>
+		</div>
 	</div>
 
 </body>

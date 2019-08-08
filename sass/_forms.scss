@@ -83,7 +83,7 @@ body {
 	}
 }
 
-.payment-options {
+.payment-totals {
 	&__row {
 		display: flex;
 		align-items: center;
@@ -112,5 +112,28 @@ body {
 
 	input[type="number"] {
 		flex: 1 1 auto;
+	}
+}
+
+.payment-options {
+	p {
+		font-size: 2.4rem;
+		font-weight: bold;
+		margin-right: 2rem;
+	}
+
+	button {
+		margin-right: 2rem;
+		padding: 1rem 2rem;
+		background-color: green;
+		border: none;
+		color: #fff;
+		font-size: 2rem;
+		border-radius: .5rem;
+		min-width: 21rem;
+
+		&:hover {
+			cursor: pointer;
+		}
 	}
 }
