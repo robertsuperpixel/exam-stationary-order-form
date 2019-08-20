@@ -1,21 +1,38 @@
 html {
 	font-size: 62.5% !important;
+	@media (max-width: 880px) {
+		font-size: 45% !important;
+	}
 }
 
 body {
 	font-size: 1.8rem;
-	width: 120rem;
 	margin: 0 auto;
-}
 
+	font-family: Roboto,Arial;
+
+}
+.order-form_wrap {
+	max-width: 90rem;
+	padding: 0 15px;
+	margin: auto;
+	box-sizing: border-box;
+}
 .order-form {
-	
 	fieldset {
-		padding: 3rem;
+		padding: 3rem 0;
 		margin-bottom: 3rem;
+
+		border: none;
+
+		&.from__border {
+			border-bottom: 2px solid #efefef;
+		}
 	}
 
 	legend {
+		color: #526798;
+		font-weight: 700;
 		font-size: 3rem;
 	}
 
@@ -25,16 +42,33 @@ body {
 	}
 
 	input[type="number"] {
-		background-color: #f3f3f3;
-		border: 1px solid #efefef;
 		padding: 1rem 0.5rem 1rem 2rem;
-		border-radius: .5rem;
+		max-width: 150px;
+		width: 100%;
+
+		color: #5b5b5b;
 		text-align: center;
 		font-size: 2rem;
 		font-weight: bold;
-		width: 100%;
-	}
 
+		border-radius: .5rem;
+		background-color: #f3f3f3;
+		border: 1px solid #efefef;
+	}
+	input#total {
+		background-color: #526798;
+	}
+	.quantity {
+		font-size: 3rem;
+		font-weight: 700;
+		color: #526798;
+		text-transform: uppercase;
+	}
+	.total-price {
+		font-size: 3rem;
+		font-weight: 700;
+		color: #526798;
+	}
 	&__row {
 		display: flex;
 		align-items: center;
@@ -49,6 +83,8 @@ body {
 		width: 40%;
 		display: flex;
 		flex-direction: column;
+		padding-right: 30px;
+		box-sizing: border-box;
 	}
 
 	&__col-2 {
@@ -61,33 +97,53 @@ body {
 	}
 
 	&__col-4 {
+		padding-left: 5rem;
 		width: 20%;
+
+		box-sizing: border-box;
+		@media (max-width: 880px){
+			padding-left: 0;
+		}
 	}
 
 	&__euro {
-		display:inline-block;
-		position: relative;
+		display:flex;
+		justify-content: flex-end;
 
 		input {
 			padding-left: 2rem;
+			color: #5b5b5b;
 		}
 
-		&::before {
+		label {position: relative;}
+
+		label::before {
 			font-size: 2rem;
 			position: absolute;
 			content:"€";
-			left: 2rem;
-			top: 1rem;
+			color: #5b5b5b;
+			left: 1rem;
+			top: 50%;
+			transform: translateY(-50%);
 			font-weight: bold;
 		}
+	}
+
+	.row__title {
+		margin-bottom: 1rem;
 	}
 }
 
 .payment-totals {
+	legend {
+		color: #5b5b5b;
+	}
+
 	&__row {
 		display: flex;
 		align-items: center;
 		margin-bottom: 2rem;
+		justify-content: flex-end;
 
 		&:last-child {
 			margin-bottom: 0;
@@ -104,6 +160,7 @@ body {
 
 	p {
 		width: 80%;
+		color: #5b5b5b;
 	}
 
 	label {
@@ -119,21 +176,24 @@ body {
 	p {
 		font-size: 2.4rem;
 		font-weight: bold;
-		margin-right: 2rem;
 	}
 
 	button {
-		margin-right: 2rem;
+		flex-grow: 1;
+		margin-left: 2rem;
 		padding: 1rem 2rem;
-		background-color: green;
+		background-color: #8fb021;
 		border: none;
 		color: #fff;
 		font-size: 2rem;
+		font-weight: 700;
 		border-radius: .5rem;
 		min-width: 21rem;
+		cursor: pointer;
+		transition: all 200ms ease-in-out;
 
 		&:hover {
-			cursor: pointer;
+			background-color: #657f1a;
 		}
 	}
 }

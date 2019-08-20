@@ -10,12 +10,27 @@
 
 <body>
 
-	<div>
+	<div class="order-form_wrap">
 		<form id="order-form" class="order-form">
 			
 			<!-- Personalised Answer Books -->
-			<fieldset>
-				<legend>Personalised Answer Books</legend>
+			<fieldset class="from__border">
+				<div class="order-form__row row__title">
+					<div class="order-form__col-1">
+						<legend>Personalised Answer Books</legend>
+					</div>
+					<div class="order-form__col-2 quantity">
+						<span>Qty</span>
+					</div>
+
+					<div class="order-form__col-3 spacer">
+					</div>
+
+					<div class="order-form__col-4 total-price">
+						<span>Total</span>
+					</div>
+				</div>
+
 				<div class="order-form__row">
 					<div class="order-form__col-1">
 						<label for="pab-1">8 Page Answer Booklet</label>
@@ -31,7 +46,9 @@
 					</div>
 
 					<div class="order-form__col-4 order-form__euro">
-						<input type="number" id="total-1" name="total-1" disabled/>
+						<label>
+							<input type="number" id="total-1" name="total-1" disabled/>
+						</label>
 					</div>
 				</div>
 				<div class="order-form__row">
@@ -49,7 +66,9 @@
 					</div>
 
 					<div class="order-form__col-4 order-form__euro">
-						<input type="number" id="total-2" name="total-2" disabled/>
+						<label>
+							<input type="number" id="total-2" name="total-2" disabled/>
+						</label>
 					</div>
 				</div>
 				<div class="order-form__row">
@@ -68,15 +87,32 @@
 					</div>
 
 					<div class="order-form__col-4 order-form__euro">
-						<input type="number" id="total-3" name="total-3" disabled/>
+						<label>
+							<input type="number" id="total-3" name="total-3" disabled/>
+						</label>
+
 					</div>
 				</div>
 			</fieldset>
 			<!-- /Personalised Answer Books -->
 
 			<!-- Standard Answer Books -->
-			<fieldset>
-				<legend>Standard Answer Books</legend>
+			<fieldset class="from__border">
+				<div class="order-form__row row__title">
+					<div class="order-form__col-1">
+						<legend>Standard Answer Books</legend>
+					</div>
+					<div class="order-form__col-2 quantity">
+						<span>Qty</span>
+					</div>
+
+					<div class="order-form__col-3 spacer">
+					</div>
+
+					<div class="order-form__col-4 total-price">
+						<span>Total</span>
+					</div>
+				</div>
 				<div class="order-form__row">
 					<div class="order-form__col-1">
 						<label for="sab-1">8 Page Answer Booklet</label>
@@ -92,7 +128,10 @@
 					</div>
 
 					<div class="order-form__col-4 order-form__euro">
-						<input type="number" id="total-4" name="total-4" disabled/>
+						<label>
+							<input type="number" id="total-4" name="total-4" disabled/>
+						</label>
+
 					</div>
 				</div>
 				<div class="order-form__row">
@@ -110,7 +149,10 @@
 					</div>
 
 					<div class="order-form__col-4 order-form__euro">
-						<input type="number" id="total-5" name="total-5" disabled/>
+						<label>
+							<input type="number" id="total-5" name="total-5" disabled/>
+						</label>
+
 					</div>
 				</div>
 				<div class="order-form__row">
@@ -129,15 +171,32 @@
 					</div>
 
 					<div class="order-form__col-4 order-form__euro">
-						<input type="number" id="total-6" name="total-6" disabled/>
+						<label>
+							<input type="number" id="total-6" name="total-6" disabled/>
+						</label>
+
 					</div>
 				</div>
 			</fieldset>
 			<!-- /Standard Answer Books -->
 
 			<!-- Extras -->
-			<fieldset>
-				<legend>Extras</legend>
+			<fieldset class="from__border">
+				<div class="order-form__row row__title">
+					<div class="order-form__col-1">
+						<legend>Extras</legend>
+					</div>
+					<div class="order-form__col-2 quantity">
+						<span>Qty</span>
+					</div>
+
+					<div class="order-form__col-3 spacer">
+					</div>
+
+					<div class="order-form__col-4 total-price">
+						<span>Total</span>
+					</div>
+				</div>
 				<div class="order-form__row">
 					<div class="order-form__col-1">
 						<label for="extra-1">4 Page Inserts</label>
@@ -153,7 +212,9 @@
 					</div>
 
 					<div class="order-form__col-4 order-form__euro">
-						<input type="number" id="total-7" name="total-7" disabled/>
+						<label>
+							<input type="number" id="total-7" name="total-7" disabled/>
+						</label>
 					</div>
 				</div>
 				<div class="order-form__row">
@@ -171,7 +232,9 @@
 					</div>
 
 					<div class="order-form__col-4 order-form__euro">
-						<input type="number" id="total-8" name="total-8" disabled/>
+						<label>
+							<input type="number" id="total-8" name="total-8" disabled/>
+						</label>
 					</div>
 				</div>
 				<div class="order-form__row">
@@ -190,7 +253,9 @@
 					</div>
 
 					<div class="order-form__col-4 order-form__euro">
-						<input type="number" id="total-9" name="total-9" disabled/>
+						<label>
+							<input type="number" id="total-9" name="total-9" disabled/>
+						</label>
 					</div>
 				</div>
 				<div class="order-form__row">
@@ -209,7 +274,9 @@
 					</div>
 
 					<div class="order-form__col-4 order-form__euro">
-						<input type="number" id="total-10" name="total-10" disabled/>
+						<label>
+							<input type="number" id="total-10" name="total-10" disabled/>
+						</label>
 					</div>
 				</div>
 			</fieldset>
@@ -241,14 +308,13 @@
 			</fieldset>
 			<!-- /Payment Options -->
 		</form>
-	</div>
 
-
-	<div class="payment-options">
-		<div class="order-form__row">
-			<p>Pay By:</p>
-			<button>Bank Transfer</button>
-			<button>Credit / Debit Card</button>
+		<div class="payment-options">
+			<div class="order-form__row">
+				<p>Pay By:</p>
+				<button>Bank Transfer</button>
+				<button>Credit / Debit Card</button>
+			</div>
 		</div>
 	</div>
 
