@@ -291,17 +291,29 @@
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec placerat efficitur dictum. Maecenas ut est ligula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec placerat efficitur dictum. Maecenas ut est ligula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec placerat efficitur dictum. Maecenas ut est ligula.</p>
 					</div>
 					<div class="payment-totals__col-2">
-						<div class="payment-totals__row ">
-							<label for="sub-total">Sub Total</label>
-							<input type="number" min="1" max="1000" step="1" id="sub-total" name="sub-total" disabled/>
-						</div>
 						<div class="payment-totals__row">
+							<label for="sub-total">Sub Total</label>
+							<div class="order-form__euro">
+								<label>
+									<input type="number" min="1" max="1000" step="1" id="sub-total" name="sub-total" disabled/>
+								</label>
+							</div>
+						</div>
+						<div class="payment-totals__row ">
 							<label for="postage">Delivery</label>
-							<input type="number" min="1" max="1000" step="1" id="postage" name="postage" disabled/>
+							<div class="order-form__euro">
+								<label>
+									<input type="number" min="1" max="1000" step="1" id="postage" name="postage" disabled/>
+								</label>
+							</div>
 						</div>
 						<div class="payment-totals__row">
 							<label for="total">Total</label>
-							<input type="number" min="1" max="1000" step="1" id="total" name="total" disabled/>
+							<div class="order-form__euro total_wrap">
+								<label>
+									<input type="number" min="1" max="1000" step="1" id="total" name="total" disabled/>
+								</label>
+							</div>
 						</div>
 					</div>
 				</div>

@@ -29,7 +29,6 @@ body {
 			border-bottom: 2px solid #efefef;
 		}
 	}
-
 	legend {
 		color: #526798;
 		font-weight: 700;
@@ -147,6 +146,12 @@ body {
 
 		&:last-child {
 			margin-bottom: 0;
+		}
+		.total_wrap {
+			label::before ,
+			input {
+				color: #f3f3f3;
+			}
 		}
 	}
 
